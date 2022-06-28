@@ -1,17 +1,13 @@
-function ship(a, b) {
+function ship(length) {
     const Ship = (length) => {
-        const length = length;
-        const hit = () => console.log("hit"); //function that takes a number and then marks that position as ‘hit'
-        const isSunk= () => console.log("sunk"); //unction that calculates it based on their length and whether all of their positions are ‘hit’.
-        //return {length};
-      }
+        const getLength = () => length;
+        const hit = (num) => {
+            console.log("hit");
 
+        };
+        const isSunk = () => console.log("sunk");
+        return { length, hit, isSunk };
+    }
 
-
-
-
-
-
-    return a + b;
-  }
-  module.exports = ship;
+}
+module.exports = ship;
